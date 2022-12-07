@@ -40,7 +40,6 @@ public class TicTacToeKenan {
         while (controls2) {
             //matrix
             showMatrix(matrix);
-
             boolean istWinner = findWinner(matrix, testX, testO);
             if (istWinner) {
                 while (controls3) {
@@ -71,7 +70,7 @@ public class TicTacToeKenan {
                 }
             }
 
-//from 1. user
+        //from 1. user
         while (true) {
             int nummer1 = enterNummer();
             String userInput1 = String.valueOf(nummer1);
