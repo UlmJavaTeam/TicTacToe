@@ -128,8 +128,9 @@ public class TicTacToeKenan {
             System.out.println("no Winner !!");
             System.out.println("1. to Continue ");
             System.out.println("2. Exit ");
-            int karar = input.nextInt();
-            if (karar == 1) {
+            int continueOrExit = enterNummer();
+            if (continueOrExit == 1) {
+                count= 0;
                 iteratinoncontroll = "f";
                 int a = 0;
                 for (int i = 0; i < 3; i++) {
@@ -138,7 +139,8 @@ public class TicTacToeKenan {
                         matrix[i][j] = String.valueOf(a);
                     }
                 }
-            } else if (karar == 2)
+                showMatrix(matrix);
+            } else if (continueOrExit == 2)
                 controls2 = false;
             continue;
         }
