@@ -10,6 +10,7 @@ public class TicTacToe3 {
     public static void main(String[] args) {
         // create a key to close when the game is over
         while (true) {
+            // Test
             Scanner scan=new Scanner(System.in);
             printMenu();
             String choose=scan.nextLine();
